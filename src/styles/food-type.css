@@ -1,0 +1,21 @@
+.food__type {
+  border: 1px solid #f0f0f0;
+  background: #fff;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  max-width: 135px;
+  width: 100%;
+  gap: 8px;
+}
+.food__type img {
+  max-width: 32px;
+}
+.food__type p {
+  font-size: 1.8rem;
+  line-height: 24px;
+  color: var(--black-color);
+}

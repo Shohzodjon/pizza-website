@@ -1,0 +1,15 @@
+.base__btn {
+  border: none;
+  padding: 13px 3.2rem;
+  border-radius: 6px;
+  background: var(--yellow-color);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 22px;
+  cursor: pointer;
+}
+.small__size {
+  padding: 11px 2rem !important;
+  font-size: 14px;
+  line-height: 18px;
+}

@@ -1,0 +1,14 @@
+.pizza__box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pizza__box p {
+  font-size: 1.8rem;
+  color: var(--dark-color);
+  line-height: 18px;
+}
+.pizza__box .pizza__wrapp svg {
+  transform: rotate(-120deg);
+  margin-top: -3px;
+}
