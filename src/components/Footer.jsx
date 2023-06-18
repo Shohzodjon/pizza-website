@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer__flex">
           <PizzaPeace />
-          <ul>
+          <ul className="first__list">
             <li>
               <h4>Куда пицца</h4>
             </li>
@@ -25,7 +25,7 @@ const Footer = () => {
             </li>
           </ul>
           {/* footer second list */}
-          <ul>
+          <ul className="second__list">
             <li>
               <h4>Помощь</h4>
             </li>
@@ -40,31 +40,39 @@ const Footer = () => {
             </li>
           </ul>
           {/* footer last list */}
-          <ul>
+          <ul className="third__list">
             <li>
               <h4>Контакты</h4>
             </li>
             <li>
-              <a href="tel:+7 (926) 223-10-11">
-                <BsTelephone /> +7 (926) 223-10-11
+              <a href="tel:+7 (926) 223-10-11" className="footer__link-flex">
+                <BsTelephone size={"1.8rem"} color={"#FF7010"} /> +7 (926)
+                223-10-11
               </a>
             </li>
             <li>
-              <a href="#">
-                <HiOutlineLocationMarker /> Москва, ул. Юных Ленинцев, д.99
+              <a href="#" className="footer__link-flex">
+                <HiOutlineLocationMarker size={"1.8rem"} color={"#FF7010"} />{" "}
+                Москва, ул. Юных Ленинцев, д.99
               </a>
             </li>
-            <li>
-              <a href="#">
-                <FaFacebook />
+            <li
+              style={{ display: "flex", alignItems: "center", gap: "2.4rem" }}
+            >
+              <a href="#" className="footer__link-flex">
+                <FaFacebook size={"1.8rem"} color={"#FF7010"} />
                 Facebok
               </a>
-              <a href="#">
-                <FaInstagram />
+              <a href="#" className="footer__link-flex">
+                <FaInstagram size={"1.8rem"} color={"#FF7010"} />
                 Instagram
               </a>
             </li>
           </ul>
+        </div>
+        <div className="footer__bottom">
+          <span>© Copyright 2021 — Куда Пицца</span>
+          <span>Отследить заказ</span>
         </div>
       </div>
     </footer>

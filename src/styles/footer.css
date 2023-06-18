@@ -1,9 +1,9 @@
 footer {
   padding: 3.2rem 0;
+  background: #fff;
 }
 .footer__flex {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -12,6 +12,15 @@ footer {
   flex-direction: column;
   gap: 2rem;
 }
+.footer__flex .first__list {
+  margin-left: 17.5rem;
+}
+.footer__flex .second__list {
+  margin-left: 13.1rem;
+}
+.footer__flex .third__list {
+  margin-left: 17.3rem;
+}
 .footer__flex ul li h4 {
   font-size: 2rem;
   line-height: 28px;
@@ -19,6 +28,23 @@ footer {
   font-weight: 700;
 }
 .footer__flex ul li a {
+  font-size: 1.6rem;
+  line-height: 22px;
+  color: var(--black-color);
+}
+.footer__link-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  gap: 44.7rem;
+  margin-top: 2rem;
+}
+.footer__bottom span {
   font-size: 1.6rem;
   line-height: 22px;
   color: var(--black-color);

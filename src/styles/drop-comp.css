@@ -1,0 +1,25 @@
+.drop__component {
+  margin-left: 3rem;
+  position: relative;
+  width: max-content !important;
+}
+.drop__input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 70px;
+  max-width: 100px;
+  border: 1px solid red;
+  font-size: 16px;
+  cursor: pointer;
+}
+.drop__list {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+li {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
