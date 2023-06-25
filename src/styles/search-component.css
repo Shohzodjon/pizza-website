@@ -1,11 +1,11 @@
 .search__flex {
   display: flex;
   align-items: center;
-  width: 100%;
   background: #fff;
   border: 1px solid #f0f0f0;
   border-radius: 8px;
   padding: 1.6rem 3.2rem;
+  margin: 2rem 0;
 }
 .search__flex p {
   font-size: 1.8rem;
@@ -14,6 +14,9 @@
 }
 .search__flex label {
   position: relative;
+  flex: 3 0 auto !important;
+  display: flex;
+  align-items: center;
 }
 .location__icon {
   position: absolute;
@@ -29,7 +32,7 @@
   font-size: 1.6rem;
   line-height: 22px;
   color: var(--black-color);
-  width: 78.3rem;
+  flex: 2 0 auto;
   margin-right: 2rem;
 }
 .search__flex input::placeholder {
