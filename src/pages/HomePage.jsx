@@ -7,6 +7,7 @@ import img1 from "../images/pizza_card1.png";
 import HeaderComp from "../components/HeaderComp";
 import ProductCard from "../components/ProductCard";
 import product from "../static/product-data";
+import sushi__data from "../static/sushi-data";
 const HomePage = () => {
   let arr = [1, 2, 3, 4];
   let arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -32,7 +33,7 @@ const HomePage = () => {
           <SearchComponent />
         </div>
         <div>
-          <HeaderComp />
+          <HeaderComp title="Пицца" />
         </div>
         <div className="home__page__grid">
           {arr2.map((item) => (
@@ -46,7 +47,21 @@ const HomePage = () => {
             />
           ))}
         </div>
+        <HeaderComp title="Суши" />
+        <div className="home__page__grid">
+          {arr2.map((item) => (
+            <ProductCard
+              key={item}
+              product_img={sushi__data[0].img_url}
+              title={sushi__data[0].title}
+              product_desc={sushi__data[0].product_desc}
+              product_condition={sushi__data[0].product_condition}
+              product_price={sushi__data[0].product_price}
+            />
+          ))}
+        </div>
       </div>
+      {/* end of container div */}
     </section>
   );
 };
