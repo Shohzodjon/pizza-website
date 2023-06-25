@@ -1,9 +1,12 @@
+.sub__navbar {
+  background: #fff;
+}
 .sub__navbar-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.2rem 0;
-  background: #fff;
+  width: 100%;
 }
 .sub__navbar__list-left {
   display: flex;

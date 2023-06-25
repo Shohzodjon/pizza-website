@@ -1,0 +1,79 @@
+.filter__modal__box {
+  background: #fff;
+}
+.filter__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.filter__header .filter__head__title {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  font-weight: 600;
+}
+.filter__header .modal__close__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.filter__body {
+  margin-top: 1rem;
+  padding: 0 1.5rem;
+}
+.filter__title {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--grey-color);
+  margin: 1rem 0;
+}
+.filter__body ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+.filter__btn {
+  padding: 9px 16px;
+  font-size: 14px;
+  line-height: 18px;
+  max-height: 4rem;
+  border-radius: 6px;
+  border: 1px solid var(--grey-color);
+  background: transparent;
+  color: var(--black-color);
+  font-weight: 400;
+  cursor: pointer;
+  transition: all linear 0.4s;
+}
+.filter__btn:hover {
+  border-color: var(--yellow-color);
+  color: #fff;
+  background: var(--yellow-color);
+}
+.filter__line {
+  display: block;
+  width: 100%;
+  height: 1.3px;
+  background: var(--secondary-grey);
+  margin: 2rem 0;
+}
+.filter__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+.filter__footer__btn {
+  padding: 11px 4rem;
+  max-height: 48px;
+  font-size: 1.6rem;
+  line-height: 22px;
+  text-align: center;
+  border: 1px solid var(--yellow-color);
+  border-radius: 6px;
+  cursor: pointer;
+  background: none;
+}
