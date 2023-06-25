@@ -8,6 +8,7 @@ import HeaderComp from "../components/HeaderComp";
 import ProductCard from "../components/ProductCard";
 import product from "../static/product-data";
 import sushi__data from "../static/sushi-data";
+import ReadMore from "../components/ReadMore";
 const HomePage = () => {
   let arr = [1, 2, 3, 4];
   let arr2 = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -16,7 +17,12 @@ const HomePage = () => {
       <div className="container">
         <div className="food__type__box">
           {foods.map((item) => (
-            <FoodType img_url={item.img_url} title={item.title} key={item.id} />
+            <FoodType
+              img_url={item.img_url}
+              title={item.title}
+              key={item.id}
+              path={item.path}
+            />
           ))}
         </div>
         <div className="pizza__card__container">
@@ -60,8 +66,8 @@ const HomePage = () => {
             />
           ))}
         </div>
+        <ReadMore />
       </div>
-      {/* end of container div */}
     </section>
   );
 };

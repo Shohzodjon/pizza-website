@@ -1,9 +1,10 @@
-import HomePage from "./pages/HomePage";
+import router from "./router/router";
+import { RouterProvider } from "react-router-dom";
 
 function App() {
   return (
     <section style={{ backgroundColor: "#F9F9F9" }}>
-      <HomePage />
+      <RouterProvider router={router} />
     </section>
   );
 }

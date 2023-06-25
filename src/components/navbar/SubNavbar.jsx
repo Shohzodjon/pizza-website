@@ -1,7 +1,7 @@
-import { IoPizzaOutline } from "react-icons/io5";
 import { MdLocalGroceryStore } from "react-icons/md";
 import "../../styles/sub-navbar.css";
 import PizzaPeace from "../PizzaPeace";
+import { NavLink } from "react-router-dom";
 const SubNavbar = () => {
   return (
     <section className="sub__navbar">
@@ -11,28 +11,28 @@ const SubNavbar = () => {
             <PizzaPeace />
             <ul>
               <li>
-                <a href="#">Акции</a>
+                <NavLink to="/">Акции</NavLink>
               </li>
               <li>
-                <a href="#">Пицца</a>
+                <NavLink to="/pizza">Пицца</NavLink>
               </li>
               <li>
-                <a href="#">Суши</a>
+                <NavLink to="/sushi">Суши</NavLink>
               </li>
               <li>
-                <a href="#">Напитки</a>
+                <NavLink to="/drink">Напитки</NavLink>
               </li>
               <li>
-                <a href="#">Закуски</a>
+                <NavLink to="/salad">Закуски</NavLink>
               </li>
               <li>
-                <a href="#">Комбо</a>
+                <NavLink to="/kombo">Комбо</NavLink>
               </li>
               <li>
-                <a href="#">Десерты</a>
+                <NavLink to="/dessert">Десерты</NavLink>
               </li>
               <li>
-                <a href="#">Соусы</a>
+                <NavLink to="/sauce">Соусы</NavLink>
               </li>
               <li>
                 <a href="#">Другое</a>

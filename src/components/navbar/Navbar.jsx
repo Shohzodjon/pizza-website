@@ -1,9 +1,9 @@
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BsPerson } from "react-icons/bs";
-import { IoPizzaOutline } from "react-icons/io5";
 import { MdLocalGroceryStore } from "react-icons/md";
 import "../../styles/main-navbar.css";
 import PizzaPeace from "../PizzaPeace";
+import { Outlet, Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <section className="main__navbar">
@@ -17,9 +17,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="font-inter">
+              <Link to="/about" className="font-inter">
                 Проверить адрес
-              </a>
+              </Link>
             </li>
             <li>
               <p className="font-inter">
@@ -43,37 +43,7 @@ const Navbar = () => {
         <div className="main__navbar__bottom-list">
           <div className="bottom__list-left">
             <PizzaPeace />
-            <ul>
-              <li>
-                <a href="#">Акции</a>
-              </li>
-              <li>
-                <a href="#">Пицца</a>
-              </li>
-              <li>
-                <a href="#">Суши</a>
-              </li>
-              <li>
-                <a href="#">Напитки</a>
-              </li>
-              <li>
-                <a href="#">Закуски</a>
-              </li>
-              <li>
-                <a href="#">Комбо</a>
-              </li>
-              <li>
-                <a href="#">Десерты</a>
-              </li>
-              <li>
-                <a href="#">Соусы</a>
-              </li>
-              <li>
-                <a href="#">Другое</a>
-              </li>
-            </ul>
           </div>
-          {/* end of left */}
           <button className="bottom__list-right">
             <MdLocalGroceryStore size={"2rem"} />
             <span>999 ₽</span>

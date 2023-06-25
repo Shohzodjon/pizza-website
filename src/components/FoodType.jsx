@@ -1,10 +1,11 @@
 import "../styles/food-type.css";
-const FoodType = ({ img_url, title }) => {
+import { Link } from "react-router-dom";
+const FoodType = ({ img_url, title, path }) => {
   return (
-    <div className="food__type">
+    <Link to={path} className="food__type">
       <img src={img_url} alt="card img" />
       <p>{title}</p>
-    </div>
+    </Link>
   );
 };
 export default FoodType;
